@@ -1,3 +1,5 @@
+/* Copyright 2011 Toby Smith toby@tismith.id.au */
+
 #include <stdio.h>
 #include <stdlib.h>
 

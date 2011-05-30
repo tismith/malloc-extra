@@ -1,3 +1,5 @@
+/* Copyright 2011 Toby Smith toby@tismith.id.au */
+
 #define _GNU_SOURCE
 #include <dlfcn.h>
 #include <stdlib.h>
