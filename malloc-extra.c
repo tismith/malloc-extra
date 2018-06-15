@@ -31,17 +31,17 @@ void _init(void) {
 }
 
 void * malloc(size_t size) {
-    if (print_debug) fprintf(stderr, "malloc of %d\n", size);
+    if (print_debug) fprintf(stderr, "malloc of %zu\n", size);
     return orig_malloc(size + extra_malloc);
 }
 
 void * calloc(size_t nmeb, size_t size) {
-    if (print_debug) fprintf(stderr, "calloc of %d of size %d\n", nmeb, size);
+    if (print_debug) fprintf(stderr, "calloc of %zu of size %zu\n", nmeb, size);
     return orig_calloc(nmeb, size + extra_malloc);
 }
 
 void * realloc(void *ptr, size_t size) {
-    if (print_debug) fprintf(stderr, "realloc of %p of size %d\n", ptr, size);
+    if (print_debug) fprintf(stderr, "realloc of %p of size %zu\n", ptr, size);
     return orig_realloc(ptr, size + extra_malloc);
 }
 
